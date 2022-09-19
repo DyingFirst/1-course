@@ -3,49 +3,46 @@
 
 void t1()
 {
-    std::cout << "Vanin Artyom Victorovich, 221-352" << "\n";
+    std::cout << "Vanin Artyom Victorovich, 221-352\n\n";
 }
 
 void t2()
 {
     std::cout << "min int:" << INT_MIN
-        << "\tmax int:" << INT_MAX
-        << "\tsize of int:" << sizeof(int) << "\n";
+            << "\tmax int:" << INT_MAX
+            << "\tsize of int:" << sizeof(int) << "\n";
 
     std::cout << "min uint:" << "0"
-        << "\tmax uint:" << UINT_MAX
-        << "\tsize of uint:" << sizeof(unsigned int) << "\n";
-    
+            << "\tmax uint:" << UINT_MAX
+            << "\tsize of uint:" << sizeof(unsigned int) << "\n";
+    //uint равен нулю так как не принимает отрицательные значения 
     std::cout << "min short:" << SHRT_MIN
-        << "\tmax short:" << SHRT_MAX
-        << "\tsize of short:" << sizeof(short) << "\n";
+            << "\tmax short:" << SHRT_MAX
+            << "\tsize of short:" << sizeof(short) << "\n";
     
     std::cout << "min ushort:" << "0"
-        << "\tmax ushort:" << USHRT_MAX
-        << "\tsize of ushort:" << sizeof(unsigned short) << "\n";
-
-
+            << "\tmax ushort:" << USHRT_MAX
+            << "\tsize of ushort:" << sizeof(unsigned short) << "\n";
+    //ushort равен нулю так как не принимает отрицательные значения
     std::cout << "min long:" << LONG_MAX
-        << "\tmax long:" << LONG_MIN
-        << "\tsize of long:" << sizeof(long) << "\n";
-
+            << "\tmax long:" << LONG_MIN
+            << "\tsize of long:" << sizeof(long) << "\n";
 
     std::cout << "min long long:" << LLONG_MAX
-        << "\tmax long long:" << LLONG_MIN
-        << "\tsize of long long:" << sizeof(long long) << "\n";
-
+            << "\tmax long long:" << LLONG_MIN
+            << "\tsize of long long:" << sizeof(long long) << "\n";
 
     std::cout << "min double:" << DBL_MIN
-        << "\tmax double:" << DBL_MAX
-        << "\tsize of double:" << sizeof(double) << "\n";
+            << "\tmax double:" << DBL_MAX
+            << "\tsize of double:" << sizeof(double) << "\n";
     
     std::cout << "min char:" << CHAR_MIN
-        << "\tmax char:" << CHAR_MAX
-        << "\tsize of char:" << sizeof(char) << "\n";
+            << "\tmax char:" << CHAR_MAX
+            << "\tsize of char:" << sizeof(char) << "\n";
 
     std::cout << "min bool:" << 0
-        << "\tmax bool:" << 1
-        << "\tsize of bool:" << sizeof(bool) << "\n";
+            << "\tmax bool:" << 1
+            << "\tsize of bool:" << sizeof(bool) << "\n\n";
      
 }
 
@@ -55,23 +52,23 @@ void t3()
     std::cout << "Your num: ";
     std::cin >> num;
 
-        std::cout << "Bin: 0b" << std::bitset<8 * sizeof(num)>(num) << '\n';
+        std::cout << "\nBin: 0b" << std::bitset<8 * sizeof(num)>(num) << '\n';
         std::cout << "Hex: 0x" << std::hex << num << '\n';
-        std::cout << "Bool: " << bool(num) << "\n";
-        std::cout << "Char: " << char(num) << "\n";
-        std::cout << "Double: " << double(num) << "\n";
+        std::cout << "Bool: " << bool(num) << "\n";     
+        std::cout << "Char: " << char(num) << "\n";     
+        std::cout << "Double: " << double(num) << "\n\n";
 }
 
 void t4()
 {
     int a, b;
-    std::cout << "Enter a && b: ";
+    std::cout << "Enter a and b: ";
     std::cin >> a >> b;                           // a = 75 b = 2
 
     std::cout << a << "*x=" << b << "\n";         // 2*x=75
     std::cout << "x=" << b << "/" << a << "\n";   // x=75/2
     std::cout << "x=" << b / a << "\n";             // x=37
-    std::cout << "x=" << double(b) / a << "\n";     // x = 37,5
+    std::cout << "x=" << double(b) / a << "\n\n";     // x = 37,5
 }
 
 void t5()
@@ -79,7 +76,7 @@ void t5()
     double x1, x2;
     std::cout << "Enter x1 and x2: ";
     std::cin >> x1 >> x2;
-    std::cout << (x1 + x2) / 2 << "\n";
+    std::cout << "Middle" << (x1 + x2) / 2 << "\n\n";
 }
 int main()
 {
