@@ -76,7 +76,7 @@ void t5()
     double x1, x2;
     std::cout << "Enter x1 and x2: ";
     std::cin >> x1 >> x2;
-    std::cout << "Middle" << (x1 + x2) / 2 << "\n\n";
+    std::cout << "Middle" << (x1 + x2) / 2. << "\n\n";
 }
 int main()
 {
