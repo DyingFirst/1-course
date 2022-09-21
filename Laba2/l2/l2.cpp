@@ -41,6 +41,7 @@ void t2()
 {
 	int sum = 0, ctn = 0;
 	std::string line = "";
+	cout << "Enter numbers(for end entering print '-'):";
 	cin >> line;
 	while (line != "-")
 	{
@@ -48,7 +49,7 @@ void t2()
 		ctn++;
 		cin >> line;
 	}
-	cout << sum / double(ctn);
+	cout << sum / double(ctn) << "\n";
 }
 
 int main()
@@ -65,7 +66,7 @@ int main()
 			case '3':
 				t3();
 			default:
-				cout << "Error" << '\n';
+				cout << "Error. Reboot program" << '\n';
 			}
 
 		return 0;
